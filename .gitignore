@@ -64,3 +64,6 @@ logs/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
+
+
+**/ndws_western_dataset*
