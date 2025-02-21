@@ -1,0 +1,66 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+venv/
+.env
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+out/
+
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Git
+*.orig
+
+# Other
+coverage/
+*.cover
+*.gz
+*.zip
+*.tar
+*.rar
+
+# System
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+~*
+
+# Logs
+*.log
+logs/
+
+# Secrets
+.env
+*.pem
+*.key
+*.crt
+
+# Jupyter Notebook
+.ipynb_checkpoints/
