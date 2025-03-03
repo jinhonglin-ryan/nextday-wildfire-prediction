@@ -85,13 +85,13 @@ class ndwsDataLoader:
     """
     A custom DataLoader that enables preprocessing of batches from an IterableDataset.
 
-    Allows for dropping features and loads data in (B,C,H,W) format.
+    Allows for dropping features and loads data_processing in (B,C,H,W) format.
     Also allows moving batches to device
 
     Args:
         dataset: The source IterableDataset
         batch_size: Number of samples per batch
-        num_workers: Number of worker processes for data loading
+        num_workers: Number of worker processes for data_processing loading
         device: Device to load tensors to ('cpu' or 'cuda')
         pin_memory: If True, pin memory for faster GPU transfer
         drop_last: If True, drop the last non-full batch
@@ -138,12 +138,12 @@ class ndwsDataLoader:
         self.stats = dd.io.load(stats_file)
 
     def preprocess_batch(self, batch):
-        """Preprocess a single batch of data.
+        """Preprocess a single batch of data_processing.
 
-        Drops specified features and setups up data
+        Drops specified features and setups up data_processing
 
         Args:
-            batch: A batch of data from the dataset. Could be a tensor,
+            batch: A batch of data_processing from the dataset. Could be a tensor,
                   tuple/list of tensors, or dict of tensors.
 
         Returns:
@@ -165,7 +165,7 @@ class ndwsDataLoader:
 
         data = torch.cat(res, axis=1)
 
-        # perform data augmentation
+        # perform data_processing augmentation
         if self.crop_augmentation:
             crop_transform = transforms.RandomCrop(self.hw // 2)
             data = crop_transform(data)

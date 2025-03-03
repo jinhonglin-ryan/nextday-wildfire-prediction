@@ -291,7 +291,7 @@ dependencies:
       - tables==3.10.1
       - tenacity==9.0.0
       - tensorboard==2.17.1
-      - tensorboard-data-server==0.7.2
+      - tensorboard-data_processing-server==0.7.2
       - termcolor==2.4.0
       - tfrecord==1.14.5
       - threadpoolctl==3.5.0
